@@ -65,3 +65,28 @@ ramadan2021('Rahmat Ramadan 3', '16-03-2021', '4.13am', '6.24pm' );
 
 
 
+//Class Template
+
+class Ramadan2021{
+	constructor(day, date, fazilat, sehri, iftar){
+		this.day = day;
+		this.date = date;
+		this.fazilat = fazilat;
+		this.sehri = sehri;
+		this.iftar = iftar;
+	}
+	fullFasting(){
+		console.log(`
+			Day: ${this.day} 
+			Date: ${this.date} 
+			Fazilat: ${this.fazilat} 
+			Sehri: ${this.sehri}
+			Iftar: ${this.iftar}
+			`);
+	};
+};
+
+const ramadan4 = new Ramadan2021(
+	'Ramadan 4', '17-04-2021', 
+	'রোজাদারকে...', '4.12am', '6.24pm');
+console.log(ramadan4.fullFasting());
