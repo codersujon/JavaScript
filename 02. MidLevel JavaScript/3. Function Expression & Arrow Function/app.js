@@ -62,3 +62,6 @@ const ramadan2021 = (msg, date, sehri, iftar) => {
 	document.write(`${msg}, ${date} | Sehri: ${sehri} | Iftar: ${iftar}`);
 }
 ramadan2021('Rahmat Ramadan 3', '16-03-2021', '4.13am', '6.24pm' );
+
+
+
