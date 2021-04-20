@@ -66,3 +66,21 @@ console.log(cat1.catDetails());
 
 let cat2 = new Cat('Puffalump', '5years');
 console.log(cat2.catDetails());
+
+
+
+
+class Scale{
+	constructor(name, inche,price){
+		this.name = name;
+		this.inche = inche;
+		this.price = price;
+	}
+	info(){
+		console.log(`${this.name} ${this.inche} ${this.price}`);
+	}
+}
+
+let scale01 = new Scale('Stainless', '12inche', 35);
+console.log(scale01.info());
+

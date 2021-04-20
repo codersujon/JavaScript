@@ -86,7 +86,7 @@ class Ramadan2021{
 	};
 };
 
-const ramadan4 = new Ramadan2021(
-	'Ramadan 4', '17-04-2021', 
-	'রোজাদারকে...', '4.12am', '6.24pm');
-console.log(ramadan4.fullFasting());
+const ramadan5 = new Ramadan2021(
+	'Ramadan 4', '18-04-2021', 
+	'রোজাদারকে...', '4.11am', '6.25pm');
+console.log(ramadan5.fullFasting());
