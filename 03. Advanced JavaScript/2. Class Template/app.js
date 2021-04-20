@@ -36,6 +36,6 @@ console.log(person2.greeting());
 console.log(person2.fullName());
 
 
-Person class ke inherite korlam subclass Customer e
+/*Person class ke inherite korlam subclass Customer e
 
-base class and subclass full ghotona is call Inheritance;
+base class and subclass full ghotona is call Inheritance;*/

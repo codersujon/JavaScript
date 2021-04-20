@@ -39,7 +39,7 @@ let agePrint2 = age3 =>{
 
 
 
-
+/*
 	const date = new Date();
 	const ramadan = {
 		msg: 'Rahmat Ramadan 2',
@@ -51,23 +51,23 @@ let agePrint2 = age3 =>{
 		}
 	}
 	document.write(ramadan.dayPrint());
+*/
 
 
 
 
-
-//Arrow Funciton
+/*//Arrow Funciton
 
 const ramadan2021 = (msg, date, sehri, iftar) => {
 	document.write(`${msg}, ${date} | Sehri: ${sehri} | Iftar: ${iftar}`);
 }
-ramadan2021('Rahmat Ramadan 3', '16-03-2021', '4.13am', '6.24pm' );
+ramadan2021('Rahmat Ramadan 3', '16-03-2021', '4.13am', '6.24pm' );*/
 
 
 
 //Class Template
 
-class Ramadan2021{
+/*class Ramadan2021{
 	constructor(day, date, fazilat, sehri, iftar){
 		this.day = day;
 		this.date = date;
@@ -90,3 +90,35 @@ const ramadan5 = new Ramadan2021(
 	'Ramadan 4', '18-04-2021', 
 	'রোজাদারকে...', '4.11am', '6.25pm');
 console.log(ramadan5.fullFasting());
+*/
+
+class Ramadan2021{
+	constructor(day, sehri, iftar){
+		this.day =  day;
+		this.sehri = sehri;
+		this.iftar = iftar;
+	}
+	fullFasting(){
+		console.log(` Day: ${this.day}, 
+			Sehri: ${this.sehri}, 
+			Iftar: ${this.iftar}`);
+	}
+}
+
+class Roja extends Ramadan2021{
+	constructor(day, sehri, iftar, date, fazilat){
+		super(day, sehri, iftar);
+
+		this.date = date;
+		this.fazilat = fazilat;
+	}
+	printfasting(){
+		console.log(`
+			Date: ${this.date} 
+			Fazilat: ${this.fazilat}`);
+	}
+}
+
+let roja7 = new Roja('Ramadan 7', '4.09am', '6.26pm', '20-04-2021', 'ফিরাউনের... ');
+console.log(roja7.fullFasting());
+console.log(roja7.printfasting());
