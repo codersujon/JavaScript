@@ -6,7 +6,10 @@
 
 
 let re;
- re  = /\w/; // Word Character means Alpha, Numeric or Underscore
+ re  = /x(?=y)/; // matches x only if x is before y
+ re = /x(?=yz)/;
+ re  = /x(?!y)/;
+ /*re  = /\w/; // Word Character means Alpha, Numeric or Underscore
  re = /\w+/; // One or more show krbe
  re = /\W/; // Non Word Character
  re = /\W+/; // Non Word Character one or More
@@ -14,12 +17,13 @@ let re;
  re = /\d+/; // One or More Digit show
  re = /\D/; // Non Digit Characters
  re = /\s/; // Only WhiteSpace
- re = /\S/; 
- re = /\bhello\b/; // word boundary only space working first and end e
+  re = /\bhello\b/; // word boundary only space working first and end e
+ re = /\S/; */
+
 
 
 let str;
-str = "+01716259641";
+/*str = "+01716259641";
 str = "(*^_dfdsfa";
 str = "(*^_dfdsfa";
 str = "dfdfa(";
@@ -29,8 +33,10 @@ str = "asdfd56dfds5";
 str = "5455";
 str = "hello world";
 str = " hello ";
-str = "hello";
+str = "hello";*/
 
+str  = "dfsdxyzafa"
+str  = "dfsdxoyafa"
 console.log(re.exec(str));
 
 
