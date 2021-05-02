@@ -1,8 +1,4 @@
 
-
-
-
-
 // JSON Object Create
 
 let person1 ={ 

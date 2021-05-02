@@ -1,0 +1,8 @@
+{
+	"person":[
+		{"name":"Md.Sujon Ahmed", "age":24, "homeTown": "Dhaka", "married": false},
+		{"name":"Awhona", "age":21, "homeTown": "Chittagong", "married": false},
+		{"name":"Habiba Monty", "age":23, "homeTown": "Dhaka", "married": true},
+		{"name":"Moynul Islam", "age":27, "homeTown": "Rangamati", "married": false}
+	]
+}
