@@ -1,0 +1,7 @@
+{
+ 	"person":[
+ 		{"name": "Md.Sujon Ahmed", "age": 24, "eyeColor": "bluees"},
+ 		{"name": "Kaml", "age": 27, "eyeColor": "parlex"},
+ 		{"name": "Siam", "age": 29, "eyeColor": "piramid"}
+ 	]
+ }
