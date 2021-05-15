@@ -1,24 +1,26 @@
 /**
- * AJAX - Asynchronous Programming and XML // Get data Without Loading the page
- * Synchronous Programming
- * Asynchronous Programming
+ * AJAX - Data From External Server
+ * API- Application Programming Interface
+ * Restfull API
  */
 
+document.getElementById('get_jokes').addEventListener('click', loadJokes);
 
-document.getElementById('get_data').addEventListener('click', loadData);
+function loadJokes(){
 
-function loadData(){
-	//Create XHR(xml http request) Object which is built in class of AJAX
-	
+	let number = document.getElementById('numberJokes').value;
+	console.log(number);
+
 	let xhr = new XMLHttpRequest();
-	// console.log(xhr);
-	xhr.open("GET", "data.txt", true);
-	xhr.onload =  function (){
+	console.log(xhr);
+	xhr.open('GET',`http://api.icndb.com/jokes/random/${number}`,true);
+
+	xhr.onload = function(){
 		if (this.status === 200) {
-			// console.log(this.responseText);
-			document.getElementById('output').innerHTML = `<h3>${this.responseText}</h3>`;
+			let data = JSON.parse(this.responseText);
+			const joke = data.value.joke;
+			console.log(data);
 		}
 	}
 	xhr.send();
-	// console.log(xhr);
 }
