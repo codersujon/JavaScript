@@ -10,30 +10,42 @@
 },3000);*/
 
 
+/**
+ * Callback Function
+ */
+// 1s = 1000ms;
+
+
+// A array of persons
 let persons = [
-	{firstName: 'Awhona', lastName: 'Ahmed'},
-	{firstName: 'Sujon', lastName: 'Ahmed'}
+    {firstName: 'Mahbuba', lastName:'Sultana'},
+    {firstName: 'Md.Sujan', lastName: 'Ahemd'},
+    {firstName: 'Habiba', lastName: 'Monty'}
 ];
 
 
+//Create a Person Object
 function createPerson(person, callback){
-	setTimeout(function(){
-		persons.push(person);
-		callback();
-	},2000)
+    setTimeout(function(){
+         persons.push(person);
+         callback();
+    }, 1000);
 }
 
 
-function  getData(){
-	setTimeout(function(){
-		let output = '';
-		persons.forEach(function(item){
-			output += `<li>${item.firstName} ${item.lastName}</li>`;
-		})
-		document.getElementById('output').innerHTML =  output;
-	},500)
+
+// getData 
+function getData(){
+    setTimeout(function(){
+        let output = '';
+        persons.forEach(function(item){
+            output += `<li>${item.firstName} ${item.lastName}</li>`;
+        });
+        document.getElementById('output').innerHTML = output;
+    }, 500);
 }
 
 
-createPerson({firstName:'Riad', lastName:'Mahmud'}, getData);
-createPerson({firstName:'Atikiya', lastName:'Anika'}, getData);
+//calling a function with passing a object as a argument
+createPerson({firstName: 'Moynul', lastName:'Islam'}, getData);
+createPerson({firstName: 'Abida', lastName:'Rahman'}, getData);
